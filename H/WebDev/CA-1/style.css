@@ -1,0 +1,58 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(144, 145, 115);
+  }
+  
+  header {
+    background-color: rgb(179, 144, 95);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .quiz {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .question {
+    display: none; /* Hide all questions initially */
+  }
+  
+  .question.active {
+    display: block; /* Show only the active question */
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .quiz {
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .quiz {
+      max-width: 300px;
+    }
+  }
+  

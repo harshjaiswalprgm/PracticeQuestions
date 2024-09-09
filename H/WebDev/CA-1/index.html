@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lovely Professional University Quiz Website</h1>
+  </header>
+  <main>
+    <section class="quiz">
+      <h2>General Knowledge</h2>
+      
+      <!-- Question 1 -->
+      <div class="question active" id="question1">
+        <p>Question 1: What is the capital of France?</p>
+        <ul>
+          <li><input type="radio" name="question1" value="a"> a) Paris</li>
+          <li><input type="radio" name="question1" value="b"> b) London</li>
+          <li><input type="radio" name="question1" value="c"> c) Rome</li>
+        </ul>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="question2">
+        <p>Question 2: What is the capital of India?</p>
+        <ul>
+          <li><input type="radio" name="question2" value="a"> a) New Delhi</li>
+          <li><input type="radio" name="question2" value="b"> b) Kolkata</li>
+          <li><input type="radio" name="question2" value="c"> c) Mumbai</li>
+        </ul>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="question3">
+        <p>Question 3: Who is the Prime Minister of India?</p>
+        <ul>
+          <li><input type="radio" name="question3" value="a"> a) Narendra Modi</li>
+          <li><input type="radio" name="question3" value="b"> b) Rajiv Gandhi</li>
+          <li><input type="radio" name="question3" value="c"> c) Amit Shah</li>
+        </ul>
+      </div>
+
+      <!-- Additional questions continue similarly... -->
+
+      <!-- Navigation Buttons -->
+      <div class="navigation">
+        <button id="prevButton" onclick="navigateQuestion(-1)" disabled>Previous</button>
+        <button id="nextButton" onclick="navigateQuestion(1)">Next</button>
+      </div>
+
+      <button onclick="submitQuiz()">Submit</button>
+    </section>
+
+    <!-- Result Section -->
+    <section id="result" style="display: none;">
+      <h2>Quiz Result</h2>
+      <p id="score"></p>
+    </section>
+  </main>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
