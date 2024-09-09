@@ -45,7 +45,7 @@ void quickSort(int arr[], int s, int e) {
 
     //base case
     if(s >= e) 
-        return ;
+        return
 
     //partitioon karenfe
     int p = partition(arr, s, e);
