@@ -8,7 +8,7 @@ class doubly
     struct node *prev;
 };
 
-*temp, *head, *last, *tempo;
+*temp, *head, *last, *temp;
 int choice = 1;
 int main()
 {
